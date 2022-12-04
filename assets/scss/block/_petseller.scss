@@ -1,0 +1,99 @@
+.petsellers-wrapper
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.petsellers-text
+{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  color: #000000;
+  span 
+  {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #003459;
+  }
+}
+.petselers-link
+{
+  @include viewmore;
+}
+.petsellers-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width:1150px)
+{
+  .petsellers-list
+  {
+    justify-content: space-evenly;
+  }  
+}
+@media screen and (max-width:834px)
+{
+  .petsellers
+  {
+    display: none;
+  }
+}
+.adoption-wrapper
+{
+  display: flex;
+  flex-direction: row-reverse;
+  background: url('/assets/images/adoptionbg.png'),#FFB775;
+  overflow: hidden;
+}
+.adoption-block
+{
+  
+  padding-left: 85px;
+  text-align: start;
+}
+.adoption-wrapper__btn
+{
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width:1150px)
+{
+  .adoption-btn__view
+  {
+    @include viewintro-mb;
+  }
+  .adoption-btn__explore
+  {
+    @include explorenow-mb;
+  }
+}
+.adoption-img
+{
+  margin-top: -13px;
+}
+.adoption-title
+{
+  &::after
+  {
+    content: '';
+    width: 42px;
+    height: 38px;
+    display: inline-block;
+    background-image: url('/assets/images/animal-hand.png');
+    margin-left: 16px;
+  }
+}
+@media screen and (max-width:1070px)
+{
+    .adoption-wrapper
+    {
+      display: none;
+    }
+}
